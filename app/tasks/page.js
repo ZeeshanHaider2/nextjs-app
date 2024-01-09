@@ -1,12 +1,13 @@
-import Link from "next/link";
+import TaskForm from '@/components/TaskForm';
+import TaskList from '@/components/TaskList';
+import DeleteForm from '@/components/DeleteForm';
+
 
 const TasksPage = () => {
     return (
-      <div>
-        <h1 className='text-7xl'>TasksPage</h1>
-        <Link href = '/' className='text-2xl'>
-            back to Home Page
-        </Link>
+      <div className='max-w-lg'>
+        <TaskForm/>
+        <TaskList/>
       </div>
     )
   }
